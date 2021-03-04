@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import routers from './routers'
+// import yygMain from '@/components/home/yyg-main'
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+const router = new Router({
+  routes: routers,
+  mode: 'history'
 })
+
+export default router
+// export default new Router({
+//   routes: [
+//     {
+//       path: '/',
+//       name: 'home',
+//       component: yygMain
+//     }
+//   ]
+// })
