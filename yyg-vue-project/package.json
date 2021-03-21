@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "less-loader": "^5.0.0",
+    "qs.js": "^0.1.12",
     "view-design": "^4.5.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
