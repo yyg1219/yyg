@@ -10,6 +10,7 @@ export default ({
   mutations: {
     setPageHeight (state, height) {
       console.log(state, height)
+
       state.pageHeight = height
     }
   },
