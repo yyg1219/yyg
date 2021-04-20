@@ -12,9 +12,9 @@
 1. git init 初始化本地库
 > 初始化后，会创建一个隐藏文件夹 .git，用来跟踪管理版本库
 2. git status 查看工作区、暂存区状态
-3. git add <file name> 将工作区的文件添加到暂存区
-4. git rm --cached <file name> 移除暂存区修改
-5. git commit <file name> -m "提交日志" 将文件从暂存区移到本地库
+3. git add 'file name' 将工作区的文件添加到暂存区
+4. git rm --cached 'file name' 移除暂存区修改
+5. git commit 'file name' -m "提交日志" 将文件从暂存区移到本地库
 
 ### 日志相关
 
