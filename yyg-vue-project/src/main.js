@@ -4,15 +4,18 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import ViewUI from 'view-design'
-import 'view-design/dist/styles/iview.css'
+// import ViewUI from 'view-design'
+// import 'view-design/dist/styles/iview.css'
 import store from './store'
 import axios from 'axios'
 import qs from 'qs' // 它的作用是能把json格式的直接转成data所需的格式
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
 
-Vue.use(ViewUI)
+// Vue.use(ViewUI)
+Vue.use(Element)
 
 Vue.prototype.$http = axios // 全局注册 使用方式为：this.$axios
 Vue.prototype.qs = qs // 全局注册 使用方式为：this.qs
