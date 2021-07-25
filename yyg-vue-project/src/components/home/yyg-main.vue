@@ -2,15 +2,22 @@
   <div class="content"
        :style="{height: `${clientHeight}px`}">
     <div class="left">
-      <Button type="primary"
-              @click='handleClick'>
+      <el-button type="primary"
+                 @click='handleClick'>
         登录
-      </Button>
+      </el-button>
     </div>
     <div class="center">
       高度：<Input v-model="height"
              style="width: 300px"
              @on-change='changeHeight'></Input>
+
+      <el-collapse v-model="activeNames">
+        <el-collapse-item title="一致性 Consistency"
+                          name="1">
+          <div>123</div>
+        </el-collapse-item>
+      </el-collapse>
     </div>
     <div class="right"></div>
   </div>
@@ -22,7 +29,26 @@ export default {
   data () {
     return {
       height: 0,
-      banned: false
+      banned: false,
+      activeNames: '1',
+      coolapseList: [
+        {
+          title: '一',
+          list: ['1-1', '1-2']
+        },
+        {
+          title: '二',
+          list: ['1-1', '1-2']
+        },
+        {
+          title: '三',
+          list: ['1-1', '1-2']
+        },
+        {
+          title: '四',
+          list: ['1-1', '1-2']
+        }
+      ]
     }
   },
   computed: {
