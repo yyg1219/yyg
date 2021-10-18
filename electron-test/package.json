@@ -1,0 +1,14 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "electron test",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --watch index.js --exec electron ."
+  },
+  "author": "yyg",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron/remote": "^2.0.1"
+  }
+}
